@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	//type your code here
+  int a,d,n,tn,tn2,t1,t2;
+  scanf("%d",&n);
+  if(n%2==1)
+  {
+   a=0,d=2;
+    t1=(n+1)/2;
+    tn=a+(t1-1)*d;
+    printf("%d",tn);
+  }
+  else
+  {
+    a=0,d=1;
+    t2=n/2;
+    tn2=a+(t2-1)*d;
+    printf("%d",tn2);
+  }
+	
+}

@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	//type your code here
+  char a[50];
+  int i,count=1,len;
+    scanf("%s",a);
+  len=strlen(a);
+  if(len>20)
+  {
+  printf("Invalid Input");
+    
+  }
+  else
+  {
+   for(i=0;i<len;i++)
+   {
+     if(a[i]==a[i+1])
+     {
+      count++;   
+     }
+     else
+     {
+      printf("%c%d",a[i],count);
+      count=1;            //Important to make count equals 1
+     }
+   }
+     
+ }
+}
